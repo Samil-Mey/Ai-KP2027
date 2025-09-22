@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengkel AI & KP2027: Berfikir Semula</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .slide-card {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .slide-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header & Navigasi -->
+    <header class="bg-gray-900/80 backdrop-blur-lg sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-cyan-400">
+                <i class="fas fa-brain mr-2"></i> Berfikir Semula
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#pengenalan" class="hover:text-cyan-400 transition">Pengenalan</a>
+                <a href="#fokus-kuri" class="hover:text-cyan-400 transition">Fokus Kurikulum</a>
+                <a href="#ai-partner" class="hover:text-cyan-400 transition">AI Rakan Guru</a>
+                <a href="#kesimpulan" class="hover:text-cyan-400 transition">Kesimpulan</a>
+                <a href="URL_KE_FAIL_PDF_ANDA" target="_blank" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                    <i class="fas fa-download mr-2"></i>Muat Turun PDF
+                </a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#pengenalan" class="block hover:text-cyan-400 transition">Pengenalan</a>
+            <a href="#fokus-kuri" class="block hover:text-cyan-400 transition">Fokus Kurikulum</a>
+            <a href="#ai-partner" class="block hover:text-cyan-400 transition">AI Rakan Guru</a>
+            <a href="#kesimpulan" class="block hover:text-cyan-400 transition">Kesimpulan</a>
+            <a href="URL_KE_FAIL_PDF_ANDA" target="_blank" class="block mt-2 bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 text-center">
+                <i class="fas fa-download mr-2"></i>Muat Turun PDF
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Seksyen 1: Pengenalan -->
+        <section id="pengenalan" class="min-h-screen flex flex-col justify-center">
+            <div class="slide-card text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">Mengemudi Perubahan KP2027 dengan AI</h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">Misi kita hari ini: Memakai 'cermin mata' baharu untuk melihat Kurikulum 2027, dan menjadikan AI sebagai rakan sekerja kita, bukan musuh.</p>
+            </div>
+            <div class="mt-16 grid md:grid-cols-3 gap-8">
+                <div class="slide-card glassmorphism p-6 rounded-2xl text-center">
+                    <i class="fas fa-bullhorn text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Mod 'Pendakwah' 🗣️</h3>
+                    <p class="text-gray-400">"Cara saya inilah yang terbaik. Dah terbukti berkesan." Kita mempertahankan kaedah lama.</p>
+                </div>
+                <div class="slide-card glassmorphism p-6 rounded-2xl text-center">
+                    <i class="fas fa-gavel text-4xl text-red-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Mod 'Pendakwa Raya' ⚖️</h3>
+                    <p class="text-gray-400">"AI ini banyak kelemahan. Nanti pelajar meniru." Kita fokus mencari kesalahan.</p>
+                </div>
+                <div class="slide-card glassmorphism p-6 rounded-2xl text-center">
+                    <i class="fas fa-flask text-4xl text-green-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Mod 'Saintis' 🧪</h3>
+                    <p class="text-gray-400">"Bagaimana saya boleh uji AI untuk bantu pelajar saya?" Kita berfikir secara terbuka & bereksperimen.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seksyen 2: Fokus Kurikulum -->
+        <section id="fokus-kuri" class="py-20">
+            <div class="text-center mb-12 slide-card">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">Fokus: Mata Pelajaran Teknologi dan Digital (TnD)</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Mari kita bedah perubahan kurikulum untuk ASK/RBT/SK berdasarkan dokumen KP2027 (ms 21-33).</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Matlamat & Objektif -->
+                <div class="slide-card glassmorphism p-8 rounded-2xl grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-4">Matlamat & Objektif TnD (ms 25-26)</h3>
+                        <p class="mb-4 text-gray-300">Menyediakan murid untuk meneroka pelbagai konsep, kemahiran, dan nilai berkaitan teknologi untuk mendepani cabaran masa hadapan.</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-400">
+                            <li>Membangunkan kemahiran teknikal & digital.</li>
+                            <li>Memupuk penyelesaian masalah & inovasi.</li>
+                            <li>Meningkatkan literasi & kewarganegaraan digital.</li>
+                            <li>Menyediakan murid untuk kerjaya masa hadapan.</li>
+                            <li>Menggalakkan pembelajaran sepanjang hayat.</li>
+                        </ul>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-rocket text-8xl text-cyan-500"></i>
+                    </div>
+                </div>
+                
+                <!-- Fokus & Model ADDIE -->
+                <div class="slide-card glassmorphism p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-center text-cyan-400 mb-6">Fokus Pelaksanaan: PBL & Model ADDIE (ms 27)</h3>
+                    <div class="flex flex-wrap justify-center gap-4 text-center">
+                        <div class="bg-gray-800 p-4 rounded-lg w-32">
+                            <p class="font-bold text-lg">A</p>
+                            <p class="text-sm text-gray-400">Analysis</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg w-32">
+                            <p class="font-bold text-lg">D</p>
+                            <p class="text-sm text-gray-400">Design</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg w-32">
+                            <p class="font-bold text-lg">D</p>
+                            <p class="text-sm text-gray-400">Development</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg w-32">
+                            <p class="font-bold text-lg">I</p>
+                            <p class="text-sm text-gray-400">Implementation</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg w-32">
+                            <p class="font-bold text-lg">E</p>
+                            <p class="text-sm text-gray-400">Evaluation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pemetaan Kandungan -->
+                <div class="slide-card glassmorphism p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-center text-cyan-400 mb-6">Pemetaan Kandungan TnD (ms 28-29)</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-semibold mb-4 text-center">Sekolah Rendah</h4>
+                            <div class="space-y-4">
+                                <div class="bg-gray-800 p-4 rounded-lg"><strong>Tahap I:</strong> Leraian, Pengecaman Corak, Poster Digital.</div>
+                                <div class="bg-gray-800 p-4 rounded-lg"><strong>Tahap II:</strong> Algoritma, Slide Multimedia, Asas Teknologi.</div>
+                                <div class="bg-gray-800 p-4 rounded-lg"><strong>Tahap III:</strong> Pemikiran Komputasional, Pengurusan Data, Pembangunan Aplikasi, Asas Robotik.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold mb-4 text-center">Sekolah Menengah</h4>
+                            <div class="space-y-4">
+                                <div class="bg-gray-800 p-4 rounded-lg"><strong>Tingkatan 1:</strong> Pemikiran Komputasional, Pengurusan Data, Pembangunan Aplikasi.</div>
+                                <div class="bg-gray-800 p-4 rounded-lg"><strong>Tingkatan 2:</strong> Sama seperti Tingkatan 1 + Asas Tanaman & Jahitan.</div>
+                                <div class="bg-gray-800 p-4 rounded-lg"><strong>Tingkatan 3:</strong> Internet of Things (IoT), Projek WifiCar, Asas Robotik, Rumah Pintar.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 <!-- Menengah Atas & Keperluan PDP -->
+                <div class="slide-card glassmorphism p-8 rounded-2xl grid md:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-4">Hala Tuju Menengah Atas (ms 31)</h3>
+                        <p class="mb-4 text-gray-300">Mata pelajaran elektif baharu yang sangat relevan dengan industri:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-400">
+                           <li><strong>Sains Komputer:</strong> Blockchain, Pengaturcaraan Lanjutan.</li>
+                           <li><strong>Reka Bentuk Teknologi:</strong> Robotik dan Automasi, Bidang TVET.</li>
+                           <li><strong>Teknologi Digital & Komunikasi:</strong> AI & Machine Learning, IoT, Multimedia.</li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h3 class="text-2xl font-bold text-cyan-400 mb-4">Keperluan Perubahan PdP (ms 33)</h3>
+                        <p class="mb-4 text-gray-300">KP2027 menuntut anjakan daripada kaedah tradisional kepada:</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-400">
+                           <li>Pembelajaran Teradun (Blended Learning)</li>
+                           <li>Flipped Classroom</li>
+                           <li>Personalised & Customised Learning</li>
+                           <li>Pembelajaran Berasaskan Projek (PBL)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seksyen 3: AI Rakan Guru -->
+        <section id="ai-partner" class="py-20">
+            <div class="text-center mb-12 slide-card">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">AI sebagai Rakan Guru dalam Mod 'Saintis'</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Bagaimana kita boleh guna AI untuk menjayakan kurikulum baharu ini? Mari kita jalankan beberapa eksperimen.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Eksperimen 1 -->
+                <div class="slide-card glassmorphism p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-lightbulb text-yellow-400 mr-2"></i>Eksperimen 1: Menjana Idea Projek RBT/SK</h3>
+                    <p class="text-gray-300 mb-4"><strong>Hipotesis:</strong> AI boleh bantu saya merancang projek PBL yang kreatif & selari dengan KP2027.</p>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <p class="font-mono text-sm text-cyan-300"><strong>Prompt ></strong> "Anda seorang jurutera R&D. Berikan 3 idea projek IoT untuk pelajar Tingkatan 3 bagi menyelesaikan masalah sisa makanan di kantin sekolah, menggunakan Arduino dan sensor."</p>
+                    </div>
+                    <p class="mt-4 text-gray-400"><strong class="text-green-400">Hasil:</strong> Idea projek yang relevan dengan masalah dunia sebenar, menjimatkan masa guru untuk fokus pada bimbingan.</p>
+                </div>
+
+                <!-- Eksperimen 2 -->
+                <div class="slide-card glassmorphism p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-code text-blue-400 mr-2"></i>Eksperimen 2: Membantu Pelajar ASK</h3>
+                    <p class="text-gray-300 mb-4"><strong>Hipotesis:</strong> AI boleh jadi 'pembantu makmal' peribadi untuk pelajar, mengurangkan kekecewaan akibat ralat sintaks.</p>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <p class="font-mono text-sm text-cyan-300"><strong>Alat Ujikaji ></strong> Gunakan Replit AI atau GitHub Copilot untuk membantu pelajar mencari & memahami ralat kod secara masa nyata.</p>
+                    </div>
+                    <p class="mt-4 text-gray-400"><strong class="text-green-400">Hasil:</strong> Pelajar lebih fokus pada kemahiran teras Pemikiran Komputasional, bukan lagi pada titik koma yang tertinggal.</p>
+                </div>
+            </div>
+
+            <!-- Mengatasi Cabaran -->
+            <div class="mt-12 slide-card glassmorphism p-8 rounded-2xl text-center">
+                 <h3 class="text-2xl font-bold mb-4"><i class="fas fa-shield-alt text-teal-400 mr-2"></i>Mengatasi Cabaran "Pelajar Meniru"</h3>
+                 <p class="text-gray-300 max-w-3xl mx-auto">Daripada melarang, kita bimbing. Jadikan etika AI sebahagian daripada PdP. Ini secara langsung mengajar kompetensi **Kewarganegaraan Digital dan Etika Siber** yang termaktub dalam KP2027.</p>
+                 <p class="mt-4 text-cyan-400 font-semibold">Ubah cabaran menjadi peluang pembelajaran.</p>
+            </div>
+        </section>
+
+        <!-- Seksyen 4: Kesimpulan -->
+        <section id="kesimpulan" class="py-20 text-center">
+             <div class="slide-card">
+                <i class="fas fa-glasses text-6xl text-cyan-400 mb-6"></i>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Kegembiraan Menjadi Salah</h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto mb-8">Menyedari kaedah lama kita tidak lagi yang terbaik bukanlah satu kegagalan. Ia adalah satu **penemuan**. Ia membuka pintu untuk kita menjadi pendidik yang lebih baik untuk generasi KP2027.</p>
+                <p class="text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">Mari kita berfikir semula, bereksperimen, dan berkembang bersama pelajar kita.</p>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Back to top button -->
+    <button id="to-top-button" title="Go To Top"
+        class="hidden fixed z-50 bottom-10 right-10 p-4 border-0 w-14 h-14 rounded-full shadow-md bg-cyan-500 hover:bg-cyan-600 text-white text-lg font-semibold transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Intersection Observer for slide-in animations
+        const cards = document.querySelectorAll('.slide-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+
+        // Back to top button
+        const toTopButton = document.getElementById('to-top-button');
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                toTopButton.classList.remove("hidden");
+            } else {
+                toTopButton.classList.add("hidden");
+            }
+        };
+        toTopButton.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+    </script>
+
+</body>
+</html>
+
